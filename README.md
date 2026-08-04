@@ -132,6 +132,9 @@ git config credential.helper ""
 
 権限を必要最小限にしておくと、万が一トークンが流出しても被害を抑えられる。
 
+> 自身のリポジトリにアクセスするには**Fine-grained tokens**で十分だが、コラボレート先のリポジトリへのアクセスは**tokens(classic)**が必要
+> tokens(classic)設定時はSelect scopesの**repo**を全て選択しておこう
+
 **(3) push/pull時にユーザー名とPATを入力**
 
 ```bash
